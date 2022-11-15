@@ -2,7 +2,7 @@ import React from "react";
 
 const MovieScreen = ({movieList, page, setPage, watchList}) => {
     const movieDisplay = movieList.map((movie, index) => {
-        return <h2>{movie.original_title}</h2> 
+        return <h2 key={Math.random().toString()}>{movie.original_title}</h2> 
     }); 
 
     return (
