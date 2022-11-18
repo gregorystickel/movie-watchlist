@@ -8,7 +8,7 @@ import Watchlist from "./components/Watchlist";
 function App() {
   const [movieList, setMovieList] = useState([]);
   const [list, setList] = useState([]);
-  const [page, setPage] = useState('1');
+  const [page, setPage] = useState(1);
 
   const addMovie = (movie) => setList([...list, movie]);
 
